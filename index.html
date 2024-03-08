@@ -1,1 +1,34 @@
-Hello World
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DJ-Willard's Homepage</h1>
+        <p>{{ site.description }}</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Insert a brief introduction about yourself here.</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <p>Here you can showcase your projects or link to them.</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>You can reach out to me via email: your-email@example.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; {{ site.title }} - {{ "now" | date: "%Y" }}</p>
+    </footer>
+</body>
+</html>
